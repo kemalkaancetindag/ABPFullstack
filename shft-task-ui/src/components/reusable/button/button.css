@@ -1,0 +1,14 @@
+.button-default {
+    width: 382px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #6750A4;
+}
+
+.button-default:hover {
+    cursor: pointer;
+}

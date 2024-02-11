@@ -1,0 +1,16 @@
+
+
+.textarea-default {
+    width: 382px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #BCB8BE;
+    padding-left: 16px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.textarea-default:focus {
+    outline: none;
+    border: 1px solid #6750A4;
+}

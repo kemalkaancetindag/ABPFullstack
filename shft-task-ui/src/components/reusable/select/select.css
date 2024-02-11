@@ -1,0 +1,18 @@
+.select-default {
+    width: 382px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #BCB8BE;
+    padding-left: 16px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    margin-top: 8px;
+}
+
+.select-default:focus {
+    outline: none;
+    border: 1px solid #6750A4;
+}

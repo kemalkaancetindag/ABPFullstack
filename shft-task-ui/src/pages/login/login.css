@@ -1,0 +1,45 @@
+#login-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#login-image {
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../../assets/images/login-placeholder.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#login-action {
+    width: 50vw;
+    height: 100vh;
+}
+
+#login-form {        
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#remember-me {
+    width: 382px;
+    align-items: center;
+    justify-content: start;
+    margin-top: 24px;
+    
+    label {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    input {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+
+

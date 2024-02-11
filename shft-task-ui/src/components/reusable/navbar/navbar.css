@@ -1,0 +1,41 @@
+#nav-container {
+    height: 80px;
+    width: 100%;
+    box-shadow: 10px .5px 15px 5px #BCB8BE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+#nav-container button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    border: none;
+}
+
+#nav-container button span {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+#logout-dd {
+    width: 150px;
+    left: -60px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: -62px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #BCB8BE;
+    border-bottom: 1px solid #BCB8BE;
+    border-right: 1px solid #BCB8BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
