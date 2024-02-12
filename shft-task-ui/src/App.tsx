@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { DepartmentDetail, Departments, Login, UserDetail, Users } from './pages';
+import { Departments, Login, Users } from './pages';
 import { Layout, Loading } from './components';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ProtectedRoute } from './utils';

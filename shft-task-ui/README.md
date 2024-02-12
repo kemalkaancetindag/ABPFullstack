@@ -111,18 +111,14 @@ The `utils` folder contains the logic or systems which are used frequently.
  ┃ ┣ 📜PageEnum.ts
  ┃ ┗ 📜UserDataModalModeEnum.ts
  ┣ 📂pages
- ┃ ┣ 📂department-detail
- ┃ ┃ ┣ 📜department-detail.css
- ┃ ┃ ┗ 📜DepartmentDetail.tsx
+ ┃ ┣
  ┃ ┣ 📂departments
  ┃ ┃ ┣ 📜departments.css
  ┃ ┃ ┗ 📜Departments.tsx
  ┃ ┣ 📂login
  ┃ ┃ ┣ 📜login.css
  ┃ ┃ ┗ 📜Login.tsx
- ┃ ┣ 📂user-detail
- ┃ ┃ ┣ 📜user-detail.css
- ┃ ┃ ┗ 📜UserDetail.tsx
+ ┃ ┣
  ┃ ┣ 📂users
  ┃ ┃ ┣ 📜users.css
  ┃ ┃ ┗ 📜Users.tsx
