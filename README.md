@@ -1,9 +1,7 @@
 # BACKEND
 
 ## Known Issues and Information
-**You need to clear your browser cookies for each login cache otherwise it will throw Forgery Token error. I have tried to change cookies `SameSite` attribute to `None` from `Lax` but I wasn't able to (I needed more time to be honest :) )**
-
-**Make sure that reaact app runs on port `3000` or you will get CORS error**
+**Make sure that react app runs on port `3000` or you will get CORS error**
 
 **If backend runs on different port then `44390` go to `shft-task-ui\src\api\ApiClient.ts` and change the `baseUrl`**
 
