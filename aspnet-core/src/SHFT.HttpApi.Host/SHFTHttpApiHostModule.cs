@@ -75,6 +75,21 @@ public class SHFTHttpApiHostModule : AbpModule
         var configuration = context.Services.GetConfiguration();
         var hostingEnvironment = context.Services.GetHostingEnvironment();
 
+        context.Services.Configure<CookiePolicyOptions>(options =>
+        {
+            options.OnAppendCookie = cookieContext =>
+            {
+                cookieContext.CookieOptions.HttpOnly = false;
+                cookieContext.CookieOptions.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
+
+            };
+        });
+
+        context.Services.ConfigureApplicationCookie(options =>
+        {
+            options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
+            options.Cookie.HttpOnly = false;
+        });
        
 
         ConfigureAuthentication(context);
@@ -228,7 +243,7 @@ public class SHFTHttpApiHostModule : AbpModule
         app.UseUnitOfWork();
         app.UseDynamicClaims();
         app.UseAuthorization();
-
+        app.UseCookiePolicy();
         app.UseSwagger();
         app.UseAbpSwaggerUI(c =>
         {

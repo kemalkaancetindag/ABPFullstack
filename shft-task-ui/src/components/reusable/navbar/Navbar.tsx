@@ -8,6 +8,7 @@ import { bindActionCreators } from 'redux'
 import { appActionCreators } from '../../../state/action-creators'
 import { useSelector } from 'react-redux'
 import { State } from '../../../state/reducers'
+import Cookies from 'universal-cookie'
 
 export default function Navbar() {
 
@@ -35,8 +36,12 @@ export default function Navbar() {
             <button         
             onClick={async () => {
               setIsWorking(true)
-              const response = await AuthService.logout()
+              const response = await AuthService.logout()            
               if(response.status === 204) {
+                const cookies = new Cookies();
+                Object.keys(cookies.getAll()).forEach((key) => {                 
+                  cookies.remove(key);
+                });
                 window.localStorage.clear()
                 setIsWorking(false)
                 window.location.reload()

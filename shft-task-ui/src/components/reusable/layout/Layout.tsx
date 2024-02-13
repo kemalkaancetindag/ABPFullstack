@@ -15,6 +15,7 @@ import { bindActionCreators } from 'redux'
 import { appActionCreators } from '../../../state/action-creators'
 import DepartmentDataModal from '../../departments/department-data-modal/DepartmentDataModal'
 import { Pagination } from '../../../constants.ts'
+import Cookies from 'universal-cookie'
 
 
 
@@ -41,7 +42,6 @@ export default function Layout() {
     queryKey: ['todos', appState.currentPage * Pagination.DOC_PER_PAGE],
     queryFn: ({ queryKey }) => AppService.getUsers(queryKey[1] as number),
   });
-
 
 
 
